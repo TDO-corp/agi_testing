@@ -14,5 +14,5 @@ def is_secure_password(password):
     return True, "Password is secure."
 
 password = input("Enter a password: ")
-secure, message = is_secure_password(passwords)
+secure, message = is_secure_password(password)
 print(message)
