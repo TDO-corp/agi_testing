@@ -1,0 +1,1 @@
+This repo just for testing how AI agent can work with GITHUB stuff
