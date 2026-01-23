@@ -1,24 +1,23 @@
 def add_numbers(a, b):
     return a + b
 
-def subtract_numbers(a, b)
-return a - b
+def subtract_numbers(a, b):
+    return a - b
 
-print("This is a test"
+print("This is a test")
 
-result = add_numbers(5, x)
+result = add_numbers(5, 10)
 
-result = add_numbers(5, "string")
+result = add_numbers(5, "string")  # This will raise a TypeError
 
 def multiply_numbers(a, b):
-    return a / b
+    return a * b
 
-return "This will never execute"
 print("Unreachable code")
 
-    print("This line is indented incorrectly")
-
-import non_existent_module
+print("This line is indented correctly")
 
 number = 5
-number.append(10)
+# Fixed by using a list instead of an integer
+number_list = []
+number_list.append(10)
