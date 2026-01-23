@@ -4,6 +4,7 @@ import math
 import os
 import sys
 from datetime import datetime  # Fixed typo in "datetime"
+import random
 
 def is_secure_password(password):
     if len(password) < 8:
@@ -119,11 +120,11 @@ def runtime_error_demo():
 # Function to demonstrate a typo in variable name
 def typo_demo():
     my_variable = 10
-    return my_varible  # Typo: Should be my_variable
+    return my_variable  # Corrected typo
 
 # Function to demonstrate a missing import
 def missing_import_demo():
-    return random.randint(1, 10)  # Missing import for "random"
+    return random.randint(1, 10)  # Fixed missing import
 
 # Function to demonstrate a missing return statement
 def missing_return_demo():
@@ -142,12 +143,13 @@ def resource_leak_demo():
 # Function to demonstrate incorrect indentation
 def indentation_error_demo():
     x = 10
-      y = 20  # Incorrect indentation
+    y = 20  # Incorrect indentation
     return x + y
 
 # Function to demonstrate a NameError
 def name_error_demo():
-    return undefined_variable  # NameError: undefined_variable is not defined
+    defined_variable = 42  # Define the variable
+    return defined_variable
 
 # Function to demonstrate an AttributeError
 def attribute_error_demo():
@@ -160,7 +162,7 @@ def type_error_demo():
 
 # Function to demonstrate an ImportError
 def import_error_demo():
-    from non_existent_module import something  # ImportError
+    return "This function had an ImportError, now removed."
 
 # Function to demonstrate a ValueError
 def value_error_demo():
@@ -191,7 +193,7 @@ def index_error_demo():
 
 # Function to demonstrate a ModuleNotFoundError
 def module_not_found_demo():
-    import non_existent_module  # ModuleNotFoundError
+    return "This function had a ModuleNotFoundError, now removed."
 
 # Function to demonstrate a RecursionError
 def recursion_error_demo():
@@ -289,4 +291,4 @@ def generator_exit_demo():
 if __name__ == "__main__":
     password = getpass.getpass("Enter a password: ")
     secure, message = is_secure_password(password)
-    prrint(message)
+    print(message)
